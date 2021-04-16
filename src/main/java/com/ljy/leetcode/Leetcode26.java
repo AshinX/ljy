@@ -67,7 +67,7 @@ public class Leetcode26 {
             if (nums[i] == nums[j]) {
                 j++;
             }else{
-                j++
+                j++;
             }
         }
         return i+1;
