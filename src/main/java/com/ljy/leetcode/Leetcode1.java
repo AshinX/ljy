@@ -29,7 +29,7 @@ import java.util.Map;
  * 输入：nums = [3,3], target = 6
  * 输出：[0,1]
  */
-public class leetcode1 {
+public class Leetcode1 {
 
     public static void main(String[] args) {
         int[] nums = new int[] {2, 7, 11, 15};
