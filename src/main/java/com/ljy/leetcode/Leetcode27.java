@@ -56,9 +56,27 @@ package com.ljy.leetcode;
  */
 public class Leetcode27 {
 
+    public static void main(String[] args) {
+        //int[] nums = new int[] {1};
+        //int i = removeElement(nums, 1);
+        int[] nums = new int[] {3, 2, 2, 3};
+        int i = removeElement(nums, 3);
+        System.out.println(i);
+    }
 
-    public int removeElement(int[] nums, int val) {
+    public static int removeElement(int[] nums, int val) {
 
-        return 0;
+        int left = 0;
+        int right = nums.length - 1;
+
+        while (left <= right) {
+            if (nums[left] == val) {
+                nums[left] = nums[right];
+                right--;
+            } else {
+                left++;
+            }
+        }
+        return left;
     }
 }
