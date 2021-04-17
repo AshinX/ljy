@@ -49,7 +49,7 @@ package com.ljy.leetcode;
 public class Leetcode26 {
 
     public static void main(String[] args) {
-        int[] nums = new int[] {1, 1, 2, 3, 3, 4};
+        int[] nums = new int[] {1, 1, 2, 3, 3, 4, 4, 5, 6, 7, 8, 8};
         int i = removeDuplicates(nums);
         System.out.println(i);
 
@@ -66,11 +66,13 @@ public class Leetcode26 {
         while (j < nums.length) {
             if (nums[i] == nums[j]) {
                 j++;
-            }else{
-                j++
+            } else {
+                i++;
+                nums[i] = nums[j];
+                j++;
             }
         }
-        return i+1;
+        return i + 1;
     }
 
 }
